@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Sensor Image Fusion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Multi-Sensor Image Fusion</h1>
+    <div class="container">
+        <input type="file" id="image1" accept="image/*">
+        <input type="file" id="image2" accept="image/*">
+        <select id="fusionType">
+            <option value="average">Simple Average</option>
+            <option value="laplacian">Laplacian Pyramid (Simulated)</option>
+        </select>
+        <button id="fuseBtn">Fuse Images</button>
+        <button id="downloadBtn" disabled>Download Fused Image</button>
+        <p id="progress" class="hidden">Processing...</p>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
